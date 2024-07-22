@@ -1,12 +1,5 @@
 # Automated Printed Circuit Board Inspection: Incorporating YOLOv8 for Efficient Defect Detection
 
-## Authors
-- Gunti Swathi
-- Rohan Reddy B
-- Ashish Reddy M
-- Prasanna Kumar
-
----
 
 ## Table of Contents
 1. [Introduction](#introduction)
