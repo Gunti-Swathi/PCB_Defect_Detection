@@ -35,6 +35,7 @@ The ever-expanding electronics industry relies heavily on the flawless performan
 - Our solution leverages the cutting-edge YOLOv8 algorithm, which excels in detecting even minute defects, enhancing both accuracy and efficiency in PCB defect detection.
 
 ## Dataset
+![Project](images/img1.jpg)
 The PCB Defect Dataset comprises:
 - **Images**: 693 annotated images with a resolution of 640 x 640 pixels.
 - **Defects**: 2953 distinct defects classified into six types:
@@ -55,19 +56,26 @@ Several methods have been proposed for PCB defect detection:
 
 ## Algorithmic Components
 The YOLOv8 architecture comprises:
+![Project](images/img2.jpg)
 - **Backbone**:utilizes a modified Cross-spatial Partial Darknet53 backbone, incorporating a lightweight 2 Convolutional module with n BottleNeck (C2f module). This modification enhances feature extraction by combining the C3 module with ELAN, improving gradient flow within the network.
 - **Neck**: connects the Backbone and Head, playing a vital role in feature integration. It incorporates the PAN and FPN to establish connections at different levels, preventing information loss during feature processing.
 - **Head**: with three separate detection components, operates independently for classification and regression. The decoupled structure eliminates the need for anchors, directly predicting object center coordinates and bounding box offsets. This simplification contributes to accurate object localization and identification.
 
 ## Methodology
+![Project](images/img3.jpg)
 - **Preprocessing**: The dataset undergoes a preprocessing, involving resizing to 640 x 640 pixels, normalization and data augmentation techniques such as Random Brightness, Random Crop, Rotate, RGB Shift, and Random Contrast.
 - **Model Training**: YOLOv8s, the small version of YOLOv8 with pretrained weights, is selected after rigorous experimentation. The model is meticulously trained for 100 epochs on the augmented training set, considering the dataset's sample size and ensuring effective convergence during the training phase.
 
+## Training
+![Project](images/img4.jpg)
 
 ## Results
 The proposed model achieved an impressive mAP score of 92.1, outperforming YOLOv7 by 12%. This highlights the effectiveness of YOLOv8 in object detection, providing superior accuracy without compromising detection speed.
+![Project](images/img5.jpg)
+![Project](images/img6.jpg)
 
 ## Sample Predictions
+![Project](images/img7.jpg)
 
 
 ## Future Works
